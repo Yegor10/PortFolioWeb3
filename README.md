@@ -35,8 +35,8 @@ python -m http.server 5500
 
 | Місце | Заглушка | Замінити на |
 |-------|----------|-------------|
-| Telegram | `https://t.me/your_username` | ваш справжній username |
-| Email | `you@example.com` | вашу пошту |
+| Telegram | `https://t.me/hi_juliet` | @hi_juliet |
+| Email | `yehor.students@gmail.com` | yehor.students@gmail.com |
 | GitHub | `github.com/yegor10` | ваш профіль (якщо інший) |
 | Ім'я | «Єгор» | повне ім'я / прізвище за бажанням |
 | Демо-посилання проєктів | `#contact` | живі URL, коли будуть |
