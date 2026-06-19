@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Єгор — Python-розробник ботів та веб-розробник</title>
+<meta name="description" content="Розробляю Telegram-ботів, автоматизовані сервіси та адаптивні сайти. Повний цикл: архітектура, код, тестування, деплой і підтримка." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Єгор — Python-розробник ботів та веб-розробник" />
+<meta property="og:description" content="Telegram-боти, автоматизація, REST API та адаптивні сайти під ключ." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23140607'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' fill='%23E6332A' text-anchor='middle'%3E&gt;_%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ░░ NAV ░░ -->
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top" aria-label="На початок">
+    <span class="nav__mark">&gt;_</span>
+    <span class="nav__name">yehor<span class="nav__dot">.</span>dev</span>
+  </a>
+  <nav class="nav__links" aria-label="Головна навігація">
+    <a href="#services">Послуги</a>
+    <a href="#projects">Проєкти</a>
+    <a href="#stack">Стек</a>
+    <a href="#process">Процес</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="btn btn--ghost" href="cv.html" target="_blank" rel="noopener">Резюме</a>
+    <a class="btn btn--solid" href="#contact">Написати</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ░░ HERO ░░ -->
+<main>
+<section class="hero" id="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__copy">
+    <p class="eyebrow"><span class="eyebrow__pulse"></span>Доступний для нових проєктів</p>
+    <h1 class="hero__title">
+      Backend-розробник<br />
+      <span class="hero__title-accent">Python &amp; інтеграція API</span>
+    </h1>
+    <p class="hero__lead">
+      Створюю автоматизовані Telegram-боти, налаштовую сервери та будую
+      адаптивні сайти. Веду повний цикл — від архітектури до деплою й підтримки.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--solid btn--lg" href="#projects">Переглянути проєкти</a>
+      <a class="btn btn--ghost btn--lg" href="cv.html" target="_blank" rel="noopener">
+        Завантажити резюме
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <ul class="hero__stats">
+      <li><strong data-count="4">4</strong><span>живих проєкти</span></li>
+      <li><strong data-count="20">20</strong><span>відгуків 5★ на біржах</span></li>
+      <li><strong data-count="100" data-suffix="%">100%</strong><span>здача в строк</span></li>
+    </ul>
+  </div>
+
+  <!-- SIGNATURE: live bot console -->
+  <div class="console" aria-hidden="true">
+    <div class="console__bar">
+      <span class="console__dot"></span>
+      <span class="console__dot"></span>
+      <span class="console__dot"></span>
+      <span class="console__title">@yehor_bot — приватний чат</span>
+    </div>
+    <div class="console__body" id="console-body">
+      <!-- injected by main.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ░░ TECH TICKER ░░ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Python 3</span><i>·</i><span>aiogram 3</span><i>·</i><span>FastAPI</span><i>·</i>
+    <span>Flask</span><i>·</i><span>asyncio</span><i>·</i><span>SQLAlchemy</span><i>·</i>
+    <span>PostgreSQL</span><i>·</i><span>Redis</span><i>·</i><span>Docker</span><i>·</i>
+    <span>Nginx</span><i>·</i><span>REST API</span><i>·</i><span>Telethon</span><i>·</i>
+    <span>JavaScript</span><i>·</i><span>Tailwind</span><i>·</i><span>Linux / VPS</span><i>·</i>
+    <span>Python 3</span><i>·</i><span>aiogram 3</span><i>·</i><span>FastAPI</span><i>·</i>
+    <span>Flask</span><i>·</i><span>asyncio</span><i>·</i><span>SQLAlchemy</span><i>·</i>
+    <span>PostgreSQL</span><i>·</i><span>Redis</span><i>·</i><span>Docker</span><i>·</i>
+    <span>Nginx</span><i>·</i><span>REST API</span><i>·</i><span>Telethon</span><i>·</i>
+    <span>JavaScript</span><i>·</i><span>Tailwind</span><i>·</i><span>Linux / VPS</span><i>·</i>
+  </div>
+</div>
+
+<!-- ░░ SERVICES ░░ -->
+<section class="services" id="services">
+  <div class="section-head reveal">
+    <p class="section-head__label">// послуги</p>
+    <h2 class="section-head__title">Два напрями, один підхід — чистий код і результат</h2>
+    <p class="section-head__sub">Беру задачу від першого опису до робочого продукту на сервері. Без хаосу, з документацією й підтримкою після запуску.</p>
+  </div>
+
+  <div class="services__grid">
+    <article class="svc reveal">
+      <div class="svc__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-5-6-5M12 19h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 class="svc__title">Python &amp; Bot Development</h3>
+      <p class="svc__desc">Telegram-боти будь-якої складності з реальною бізнес-логікою та інтеграціями.</p>
+      <ul class="svc__list">
+        <li>Боти на aiogram 3 / PyTelegramBotAPI, async/await</li>
+        <li>Системи користувачів, економіка, рейтинги, досягнення</li>
+        <li>Платіжні системи та API сторонніх сервісів</li>
+        <li>Мініігри, квізи, картки, розсилки, планувальники</li>
+        <li>REST API на FastAPI / Flask для зв'язку бота й сайту</li>
+        <li>Оптимізація продуктивності й навантаження</li>
+      </ul>
+    </article>
+
+    <article class="svc reveal">
+      <div class="svc__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 9h18M3 9l1-4h16l1 4M5 9v10h14V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 class="svc__title">Веб-розробка та верстка</h3>
+      <p class="svc__desc">Адаптивні сайти за макетами Figma/PSD — від лендингу до адмін-панелі.</p>
+      <ul class="svc__list">
+        <li>Pixel-perfect верстка, кросбраузерність, mobile-first</li>
+        <li>Лендинги, корпоративні сайти, адмін-панелі</li>
+        <li>Клієнтська логіка на JavaScript (ES6+)</li>
+        <li>Інтеграція фронтенду з бекенд-сервісами</li>
+        <li>Базова SEO-структура та оптимізація швидкості</li>
+        <li>Tailwind / Bootstrap / SCSS, Flexbox &amp; Grid</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ░░ PROJECTS ░░ -->
+<section class="projects" id="projects">
+  <div class="section-head reveal">
+    <p class="section-head__label">// проєкти</p>
+    <h2 class="section-head__title">Роботи, де код і реальна задача працюють разом</h2>
+    <p class="section-head__sub">Не «красиві скріншоти», а робочі продукти: CRM усередині Telegram, міський бот-асистент, інтерактивні лендинги та документація.</p>
+  </div>
+
+  <div class="projects__grid">
+
+    <article class="proj reveal">
+      <div class="proj__screen proj__screen--crm" aria-hidden="true">
+        <div class="proj__chat">
+          <span class="bubble bubble--bot">Оберіть послугу 💄</span>
+          <span class="bubble bubble--user">Макіяж · 18:00</span>
+          <span class="bubble bubble--bot">Запис підтверджено ✅</span>
+        </div>
+      </div>
+      <div class="proj__body">
+        <div class="proj__meta">
+          <span class="tag tag--accent">Telegram CRM</span>
+          <span class="tag">aiogram 3</span>
+          <span class="tag">SQLAlchemy</span>
+        </div>
+        <h3 class="proj__title">GlowCRM</h3>
+        <p class="proj__desc">
+          Повноцінна CRM для б'юті-студії, що працює <strong>повністю всередині Telegram</strong>.
+          Клієнт записується на сеанс у три кроки, а адміністратор отримує власну панель — без окремого сайту.
+        </p>
+        <ul class="proj__did">
+          <li>Запис: послуга → дата → вільний слот, без подвійного бронювання</li>
+          <li>Адмін-панель: замовлення, статистика, дохід, графік, розсилки</li>
+          <li>SQLite у режимі WAL, FSM-діалоги, Docker-розгортання</li>
+        </ul>
+        <div class="proj__links">
+          <a class="proj__link" href="https://yegor10.github.io/glow-crm/" target="_blank" rel="noopener">Документація ↗</a>
+          <span class="proj__stack">Python · aiogram · SQLAlchemy · Docker</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="proj__screen proj__screen--kyiv" aria-hidden="true">
+        <div class="proj__modules">
+          <span>📰 Новини</span><span>🚨 Тривога</span><span>⚡ Відключення</span>
+          <span>☔ Погода</span><span>🍽️ Заклади</span><span>🚇 Метро</span>
+        </div>
+      </div>
+      <div class="proj__body">
+        <div class="proj__meta">
+          <span class="tag tag--accent">Telegram Bot</span>
+          <span class="tag">Telethon</span>
+          <span class="tag">REST API</span>
+        </div>
+        <h3 class="proj__title">MyKyivBot · Kyiv City Assistant</h3>
+        <p class="proj__desc">
+          Інтелектуальний асистент для жителів Києва: безпека, інфраструктура й дозвілля
+          в реальному часі через десяток зовнішніх API та парсинг Telegram-каналів.
+        </p>
+        <ul class="proj__did">
+          <li>Агрегатор новин з 10 каналів через Telethon + фільтрація</li>
+          <li>Статус тривоги (Siren API), графіки відключень ДТЕК, погода, AQI</li>
+          <li>Маршрути метро, заклади, кіно й театри з геолокацією</li>
+        </ul>
+        <div class="proj__links">
+          <a class="proj__link" href="https://t.me/my_kyiv_bot" target="_blank" rel="noopener">Відкрити бота ↗</a>
+          <span class="proj__stack">Python · Telethon · API-інтеграції</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="proj__screen proj__screen--neon" aria-hidden="true">
+        <span class="proj__glitch" data-text="NEON ODYSSEY">NEON ODYSSEY</span>
+      </div>
+      <div class="proj__body">
+        <div class="proj__meta">
+          <span class="tag tag--accent">Frontend</span>
+          <span class="tag">HTML / CSS / JS</span>
+          <span class="tag">Анімації</span>
+        </div>
+        <h3 class="proj__title">Neon Odyssey 2077</h3>
+        <p class="proj__desc">
+          Імерсивний лендинг cyber-art фестивалю на чистому HTML/CSS/JS —
+          без фреймворків, з акцентом на UI/UX та інтерактив.
+        </p>
+        <ul class="proj__did">
+          <li>Glitch-ефект на clip-path, glassmorphism-навігація</li>
+          <li>Симуляція оплати з валідацією та станом завантаження</li>
+          <li>Scroll-reveal через Intersection Observer, анімовані лічильники</li>
+        </ul>
+        <div class="proj__links">
+          <a class="proj__link" href="#contact">Демо за запитом ↗</a>
+          <span class="proj__stack">HTML5 · CSS3 · JavaScript ES6+</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj reveal">
+      <div class="proj__screen proj__screen--docs" aria-hidden="true">
+        <code class="proj__code">
+          <span class="ln"><b>$</b> kyiv_bot --status</span>
+          <span class="ln ok">● online · 14 modules loaded</span>
+          <span class="ln"><b>$</b> docs build &amp;&amp; deploy</span>
+          <span class="ln ok">✓ published to GitHub Pages</span>
+        </code>
+      </div>
+      <div class="proj__body">
+        <div class="proj__meta">
+          <span class="tag tag--accent">Docs / Landing</span>
+          <span class="tag">JS Canvas</span>
+          <span class="tag">CI/CD</span>
+        </div>
+        <h3 class="proj__title">KyivBot Docs</h3>
+        <p class="proj__desc">
+          Технічний документаційний сайт для бота з «терміналь­ною» естетикою,
+          matrix-фоном на canvas і автодеплоєм на GitHub Pages.
+        </p>
+        <ul class="proj__did">
+          <li>Анімований matrix-canvas, монопросторова типографіка</li>
+          <li>Структуровані секції: модулі, команди, стек, використання</li>
+          <li>GitHub Actions workflow для статичного деплою</li>
+        </ul>
+        <div class="proj__links">
+          <a class="proj__link" href="#contact">Деталі ↗</a>
+          <span class="proj__stack">HTML · CSS · JS · GitHub Actions</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ░░ STACK ░░ -->
+<section class="stack" id="stack">
+  <div class="section-head reveal">
+    <p class="section-head__label">// технології</p>
+    <h2 class="section-head__title">Інструменти, якими працюю щодня</h2>
+  </div>
+
+  <div class="stack__grid">
+    <div class="stack__col reveal">
+      <h3 class="stack__cat">Backend / Python</h3>
+      <ul class="chips">
+        <li>Python 3.x</li><li>aiogram</li><li>PyTelegramBotAPI</li><li>asyncio</li>
+        <li>FastAPI</li><li>Flask</li><li>SQLAlchemy</li><li>Pydantic</li>
+        <li>APScheduler</li><li>Requests</li><li>Webhook</li><li>REST API</li>
+      </ul>
+    </div>
+    <div class="stack__col reveal">
+      <h3 class="stack__cat">Бази даних</h3>
+      <ul class="chips">
+        <li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>Redis</li>
+        <li>ORM</li><li>Міграції</li>
+      </ul>
+    </div>
+    <div class="stack__col reveal">
+      <h3 class="stack__cat">Frontend / Верстка</h3>
+      <ul class="chips">
+        <li>HTML5</li><li>CSS3</li><li>SCSS / SASS</li><li>JavaScript ES6+</li>
+        <li>Tailwind CSS</li><li>Bootstrap</li><li>Flexbox</li><li>Grid</li>
+        <li>Responsive</li>
+      </ul>
+    </div>
+    <div class="stack__col reveal">
+      <h3 class="stack__cat">Деплой та інструменти</h3>
+      <ul class="chips">
+        <li>Docker</li><li>VPS / Ubuntu</li><li>Nginx</li><li>Gunicorn / Uvicorn</li>
+        <li>SSL</li><li>CI/CD</li><li>Git / GitHub</li><li>Linux</li>
+        <li>Postman</li><li>Figma</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ PROCESS ░░ -->
+<section class="process" id="process">
+  <div class="section-head reveal">
+    <p class="section-head__label">// як проходить робота</p>
+    <h2 class="section-head__title">Ви розумієте, що відбувається на кожному етапі</h2>
+    <p class="section-head__sub">Не починаю з хаотичних правок. Спершу розбираю задачу, узгоджую логіку — і лише потім пишу код.</p>
+  </div>
+
+  <ol class="steps">
+    <li class="step reveal">
+      <span class="step__num">01</span>
+      <h3 class="step__title">Аналіз задачі</h3>
+      <p class="step__desc">Розбираю вимоги, ставлю уточнюючі питання й формую технічне завдання. Що потрібно зробити і навіщо.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__num">02</span>
+      <h3 class="step__title">Архітектура</h3>
+      <p class="step__desc">Проєктую структуру проєкту, модель даних та інтеграції. Пояснюю рішення простою мовою, без зайвої термінології.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__num">03</span>
+      <h3 class="step__title">Розробка й тести</h3>
+      <p class="step__desc">Пишу чистий, масштабований код, перевіряю сценарії, обробляю помилки й захищаю API.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__num">04</span>
+      <h3 class="step__title">Деплой і підтримка</h3>
+      <p class="step__desc">Розгортаю на VPS (Nginx, SSL, systemd/Docker), передаю документацію та лишаюся на зв'язку для розвитку.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ░░ ADVANTAGES ░░ -->
+<section class="why">
+  <div class="why__inner reveal">
+    <div class="why__head">
+      <p class="section-head__label">// чому я</p>
+      <h2 class="section-head__title">Орієнтований на якість і результат</h2>
+    </div>
+    <ul class="why__list">
+      <li><span>Висока відповідальність</span><p>Беру результат на себе, а не «зробив і забув».</p></li>
+      <li><span>Здача в строк</span><p>Реальні терміни без обіцянок «за два дні».</p></li>
+      <li><span>Чистий код</span><p>Легко масштабувати, додавати функції та підтримувати.</p></li>
+      <li><span>Уважність до вимог</span><p>Враховую побажання замовника й пояснюю варіанти.</p></li>
+      <li><span>Постійний розвиток</span><p>Освоюю нові технології під задачі проєкту.</p></li>
+      <li><span>На зв'язку</span><p>Прозора комунікація на кожному етапі роботи.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ░░ CONTACT ░░ -->
+<section class="contact" id="contact">
+  <div class="contact__glow" aria-hidden="true"></div>
+  <div class="contact__inner reveal">
+    <p class="section-head__label">// контакти</p>
+    <h2 class="contact__title">Є задача на бота чи сайт?</h2>
+    <p class="contact__sub">Опишіть коротко, що потрібно — підкажу оптимальне рішення, терміни та формат співпраці. Фриланс, супровід або довгострокова робота.</p>
+    <div class="contact__actions">
+      <a class="btn btn--solid btn--lg" href="https://t.me/your_username" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L4.8 13.3l-4.8-1.5c-1-.3-1-.9.2-1.4L20.6 2.9c.9-.3 1.6.2 1.3 1.4Z"/></svg>
+        Написати в Telegram
+      </a>
+      <a class="btn btn--ghost btn--lg" href="https://github.com/yegor10" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn btn--ghost btn--lg" href="cv.html" target="_blank" rel="noopener">Резюме (PDF)</a>
+    </div>
+    <p class="contact__note">Можна без ТЗ — просто опишіть задачу й скиньте приклади.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span class="foot__brand">&gt;_ yehor<span class="nav__dot">.</span>dev</span>
+  <span class="foot__copy">© <span id="year">2026</span> · Python &amp; Web Development</span>
+  <a class="foot__up" href="#top">Нагору ↑</a>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

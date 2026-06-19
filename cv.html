@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Резюме — Єгор · Python-розробник</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1a0b0c; --accent:#d62b22; --ember:#ff6b4a;
+    --text:#222; --muted:#6b6b6b; --line:#e7dcd8; --bg:#fff;
+    --display:"Space Grotesk",sans-serif; --body:"Inter",sans-serif; --mono:"JetBrains Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--body);color:var(--text);background:#ece6e2;line-height:1.5;padding:2rem 1rem;}
+  .toolbar{max-width:820px;margin:0 auto 1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
+  .toolbar a,.toolbar button{font-family:var(--display);font-weight:600;font-size:.9rem;padding:.6rem 1.1rem;border-radius:8px;border:0;cursor:pointer;text-decoration:none;}
+  .btn-print{background:var(--accent);color:#fff;}
+  .btn-back{background:#fff;color:var(--ink);border:1px solid var(--line);}
+  .hint{font-family:var(--mono);font-size:.75rem;color:#7a6b66;width:100%;text-align:center;}
+
+  .page{max-width:820px;margin:0 auto;background:var(--bg);box-shadow:0 20px 50px -20px rgba(0,0,0,.3);}
+  .head{background:var(--ink);color:#f5eee6;padding:2.4rem 2.6rem;border-top:5px solid var(--accent);}
+  .head h1{font-family:var(--display);font-size:2.1rem;font-weight:700;letter-spacing:-.02em;}
+  .head .role{font-family:var(--mono);color:var(--ember);margin-top:.3rem;font-size:.95rem;}
+  .head .contacts{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.1rem;font-size:.86rem;color:#cdbdb7;font-family:var(--mono);}
+  .head .contacts a{color:#cdbdb7;text-decoration:none;}
+
+  .body{display:grid;grid-template-columns:1fr 1.6fr;}
+  .col{padding:2rem 2.2rem;}
+  .col--side{background:#faf6f3;border-right:1px solid var(--line);}
+  h2{font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 .9rem;padding-bottom:.4rem;border-bottom:1px solid var(--line);}
+  section + section{margin-top:1.7rem;}
+
+  .summary{color:#444;font-size:.95rem;}
+  .skill-group{margin-bottom:.9rem;}
+  .skill-group strong{display:block;font-family:var(--display);font-size:.85rem;margin-bottom:.35rem;}
+  .skill-group span{font-family:var(--mono);font-size:.76rem;color:#555;}
+
+  .item{margin-bottom:1.2rem;}
+  .item h3{font-family:var(--display);font-size:1.02rem;font-weight:600;}
+  .item .tagline{font-family:var(--mono);font-size:.76rem;color:var(--accent);margin:.1rem 0 .4rem;}
+  .item ul{margin-left:1.05rem;}
+  .item li{font-size:.9rem;color:#444;margin-bottom:.2rem;}
+
+  .pills{display:flex;flex-wrap:wrap;gap:.3rem;}
+  .pills span{font-family:var(--mono);font-size:.72rem;background:#f1e8e4;border:1px solid var(--line);border-radius:5px;padding:.2rem .5rem;color:#5a4f4b;}
+
+  ul.plain{list-style:none;}
+  ul.plain li{font-size:.88rem;color:#444;padding-left:1.1rem;position:relative;margin-bottom:.3rem;}
+  ul.plain li::before{content:"▹";position:absolute;left:0;color:var(--accent);}
+
+  @media (max-width:680px){.body{grid-template-columns:1fr;}.col--side{border-right:0;border-bottom:1px solid var(--line);}}
+
+  @media print{
+    body{background:#fff;padding:0;}
+    .toolbar{display:none;}
+    .page{box-shadow:none;max-width:100%;}
+    @page{margin:12mm;}
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a class="btn-back" href="index.html">← На сайт</a>
+  <button class="btn-print" onclick="window.print()">Зберегти як PDF / Друк</button>
+  <p class="hint">У вікні друку оберіть «Зберегти як PDF» — резюме готове до відправки замовнику.</p>
+</div>
+
+<div class="page">
+  <header class="head">
+    <h1>Єгор</h1>
+    <p class="role">Backend-розробник · Python &amp; інтеграція API · Веб-розробник</p>
+    <div class="contacts">
+      <span>Telegram: <a href="https://t.me/your_username">@your_username</a></span>
+      <span>GitHub: <a href="https://github.com/yegor10">github.com/yegor10</a></span>
+      <span>Email: you@example.com</span>
+      <span>Формат: фриланс / віддалено</span>
+    </div>
+  </header>
+
+  <div class="body">
+    <aside class="col col--side">
+      <section>
+        <h2>Профіль</h2>
+        <p class="summary">Розробник Python-ботів і веб-розробник із практичним досвідом створення Telegram-ботів, автоматизованих сервісів та адаптивних сайтів. Працюю повним циклом і пишу чистий, масштабований код.</p>
+      </section>
+
+      <section>
+        <h2>Навички</h2>
+        <div class="skill-group"><strong>Backend / Python</strong><span>Python 3 · aiogram 3 · PyTelegramBotAPI · asyncio · FastAPI · Flask · SQLAlchemy · Pydantic · APScheduler · REST API</span></div>
+        <div class="skill-group"><strong>Бази даних</strong><span>PostgreSQL · MySQL · SQLite · Redis · ORM · міграції</span></div>
+        <div class="skill-group"><strong>Frontend</strong><span>HTML5 · CSS3 · SCSS · JavaScript ES6+ · Tailwind · Bootstrap · Flexbox · Grid</span></div>
+        <div class="skill-group"><strong>Деплой / інфра</strong><span>Docker · VPS · Ubuntu · Nginx · Gunicorn/Uvicorn · SSL · CI/CD</span></div>
+        <div class="skill-group"><strong>Інструменти</strong><span>Git/GitHub · Linux · Postman · Figma · Chrome DevTools</span></div>
+      </section>
+
+      <section>
+        <h2>Переваги</h2>
+        <ul class="plain">
+          <li>Висока відповідальність за результат</li>
+          <li>Своєчасне виконання задач</li>
+          <li>Уважність до вимог замовника</li>
+          <li>Постійний розвиток і нові технології</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Мови</h2>
+        <ul class="plain"><li>Українська — рідна</li><li>Англійська — технічна</li></ul>
+      </section>
+    </aside>
+
+    <main class="col">
+      <section>
+        <h2>Напрями діяльності</h2>
+        <div class="item">
+          <h3>Python / Bot Development</h3>
+          <p class="tagline">Telegram-боти будь-якої складності</p>
+          <ul>
+            <li>Бізнес-логіка, системи користувачів, економіка, рейтинги, досягнення</li>
+            <li>Інтеграція платіжних систем та API сторонніх сервісів</li>
+            <li>Мініігри, квізи, картки, розсилки; робота з async/await</li>
+            <li>REST API для взаємодії ботів і сайтів, оптимізація продуктивності</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Веб-розробка та верстка</h3>
+          <p class="tagline">Адаптивні сайти за макетами Figma / PSD</p>
+          <ul>
+            <li>Лендинги, корпоративні сайти, адмін-панелі; кросбраузерність, mobile-first</li>
+            <li>Клієнтська логіка на JavaScript, інтеграція з бекендом</li>
+            <li>Базова SEO-структура та оптимізація швидкості завантаження</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Вибрані проєкти</h2>
+        <div class="item">
+          <h3>GlowCRM — CRM у Telegram</h3>
+          <p class="tagline">Python · aiogram 3 · SQLAlchemy · SQLite · Docker</p>
+          <ul>
+            <li>Запис на сеанс у 3 кроки без подвійного бронювання</li>
+            <li>Адмін-панель у боті: замовлення, статистика, дохід, графік, розсилки</li>
+          </ul>
+          <div class="pills"><span>aiogram</span><span>FSM</span><span>SQLAlchemy</span><span>Docker</span></div>
+        </div>
+        <div class="item">
+          <h3>MyKyivBot — Kyiv City Assistant</h3>
+          <p class="tagline">Python · Telethon · 10+ API-інтеграцій</p>
+          <ul>
+            <li>Новини (Telethon), тривоги (Siren API), графіки відключень ДТЕК</li>
+            <li>Погода, AQI, метро-маршрути, заклади, кіно й театри з геолокацією</li>
+          </ul>
+          <div class="pills"><span>Telethon</span><span>REST API</span><span>async</span></div>
+        </div>
+        <div class="item">
+          <h3>Neon Odyssey 2077 — лендинг</h3>
+          <p class="tagline">HTML5 · CSS3 · JavaScript ES6+</p>
+          <ul>
+            <li>Glitch-ефекти, glassmorphism, симуляція оплати з валідацією</li>
+            <li>Scroll-reveal (Intersection Observer), анімовані лічильники</li>
+          </ul>
+          <div class="pills"><span>Vanilla JS</span><span>Animations</span><span>Responsive</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Формат співпраці</h2>
+        <ul class="plain">
+          <li>Фриланс-проєкти та супровід існуючих рішень</li>
+          <li>Довгострокова та командна робота</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>
