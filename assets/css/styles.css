@@ -128,7 +128,7 @@ ul, ol { list-style: none; }
 .nav__links a:hover { color: var(--bone); }
 .nav__links a:hover::after { width: 100%; }
 
-.nav__actions { display: flex; gap: .6rem; }
+.nav__actions { display: flex; gap: .6rem; position: relative; z-index: 2; flex-shrink: 0; }
 
 .nav__burger {
   display: none;

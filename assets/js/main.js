@@ -158,6 +158,26 @@
     }
   }
 
+  /* ---------- Reveal on anchor navigation ---------- */
+  function revealInSection(section) {
+    if (!section) return;
+    section.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      const hash = link.getAttribute("href");
+      if (!hash || hash === "#" || hash === "#top") return;
+      const section = document.querySelector(hash);
+      revealInSection(section);
+      setTimeout(() => revealInSection(section), 500);
+    });
+  });
+
+  if (location.hash) {
+    revealInSection(document.querySelector(location.hash));
+  }
+
   /* ---------- Active nav link on scroll ---------- */
   const navLinks = document.querySelectorAll(".nav__links a");
   const sections = [...navLinks].map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
