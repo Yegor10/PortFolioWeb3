@@ -407,7 +407,27 @@ section { padding: clamp(4rem, 9vw, 8rem) clamp(1rem, 4vw, 3rem); }
 .proj__screen--crm  { background: radial-gradient(120% 100% at 30% 0%, #2a0e12, #160708); }
 .proj__screen--kyiv { background: radial-gradient(120% 100% at 70% 0%, #2a1010, #140707); }
 .proj__screen--neon { background: radial-gradient(120% 100% at 50% 0%, #2c0c14, #120608); }
+.proj__screen--violette { background: radial-gradient(120% 100% at 50% 0%, #3d1a63, #1a0b2e); }
 .proj__screen--docs { background: #0c0405; }
+
+.proj__violette {
+  display: flex; flex-direction: column; align-items: center; gap: .55rem;
+  padding: 1rem; text-align: center;
+}
+.proj__violette-logo {
+  font-family: var(--display); font-size: 1.85rem; font-weight: 600;
+  letter-spacing: .06em; color: #d4b8ff;
+}
+.proj__violette-logo span { color: #b388f0; }
+.proj__violette-tag {
+  font-family: var(--mono); font-size: .72rem; color: #c084fc;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(192,132,252,.28);
+  padding: .35rem .75rem; border-radius: 20px;
+}
+.proj__violette-note {
+  font-family: var(--mono); font-size: .68rem;
+  color: rgba(212,184,255,.55); letter-spacing: .1em; text-transform: uppercase;
+}
 
 .proj__chat { display: flex; flex-direction: column; gap: .5rem; padding: 1rem; width: 100%; max-width: 280px; }
 .bubble {
