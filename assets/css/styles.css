@@ -201,15 +201,21 @@ section { padding: clamp(4rem, 9vw, 8rem) clamp(1rem, 4vw, 3rem); }
   margin-bottom: 1.5rem;
 }
 .eyebrow__pulse {
+  position: relative;
   width: 8px; height: 8px; border-radius: 50%;
   background: #35d07f;
-  box-shadow: 0 0 0 0 rgba(53,208,127,.6);
-  animation: pulse 2s infinite;
+}
+.eyebrow__pulse::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border: 1px solid rgba(53,208,127,.7);
+  border-radius: inherit;
+  animation: pulse 2s ease-out infinite;
 }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(53,208,127,.55); }
-  70% { box-shadow: 0 0 0 8px rgba(53,208,127,0); }
-  100% { box-shadow: 0 0 0 0 rgba(53,208,127,0); }
+  0% { transform: scale(.75); opacity: .8; }
+  70%, 100% { transform: scale(2.2); opacity: 0; }
 }
 
 .hero__title {
