@@ -82,7 +82,7 @@
       { cmd: "about", reply: "Привіт 👋 Я <b>Єгор</b> — Python-розробник ботів і веб-розробник. Веду повний цикл: архітектура → код → деплой → підтримка." },
       { cmd: "stack", reply: "Backend: <b>Python · aiogram 3 · FastAPI · SQLAlchemy</b>. Бази: PostgreSQL, Redis. Front: JS, Tailwind. Деплой: Docker, Nginx, VPS." },
       { cmd: "projects", reply: "GlowCRM — CRM у Telegram · MyKyivBot — асистент міста · Neon Odyssey — лендинг · KyivBot Docs. Гортайте нижче ↓" },
-      { cmd: "hire", reply: "Опишіть задачу — підкажу рішення, терміни й бюджет. Здаю в строк, пишу чистий код. <b>Напишіть у Telegram →</b>" },
+      { cmd: "hire", reply: "Портфоліо містить приклади вебінтерфейсів, ботів та інтеграцій. Перегляньте проєкти й стек нижче." },
     ];
 
     const esc = (s) => s;

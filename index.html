@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#140607" />
+<meta name="color-scheme" content="dark" />
 <title>Єгор — Python-розробник ботів та веб-розробник</title>
-<meta name="description" content="Розробляю Telegram-ботів, автоматизовані сервіси та адаптивні сайти. Повний цикл: архітектура, код, тестування, деплой і підтримка." />
+<meta name="description" content="Портфоліо Єгора: Telegram-боти, автоматизація, API та адаптивні сайти. Легкий фронтенд з авторськими CSS- та JavaScript-анімаціями." />
 
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="uk_UA" />
 <meta property="og:title" content="Єгор — Python-розробник ботів та веб-розробник" />
-<meta property="og:description" content="Telegram-боти, автоматизація, REST API та адаптивні сайти під ключ." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<meta property="og:description" content="Telegram-боти, автоматизація, REST API та швидкі адаптивні сайти з анімаціями на CSS і JavaScript." />
 
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23140607'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' fill='%23E6332A' text-anchor='middle'%3E&gt;_%3C/text%3E%3C/svg%3E" />
@@ -28,13 +27,13 @@
   <nav class="nav__links" aria-label="Головна навігація">
     <a href="#services">Послуги</a>
     <a href="#projects">Проєкти</a>
+    <a href="#motion">Анімації</a>
     <a href="#stack">Стек</a>
     <a href="#process">Процес</a>
-    <a href="#contact">Контакти</a>
   </nav>
   <div class="nav__actions">
     <a class="btn btn--ghost" href="cv.html" target="_blank" rel="noopener">Резюме</a>
-    <a class="btn btn--solid" href="https://t.me/hi_juliet" target="_blank" rel="noopener">Написати</a>
+    <a class="btn btn--solid" href="#projects">Мої роботи</a>
   </div>
   <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -76,7 +75,7 @@
       <span class="console__dot"></span>
       <span class="console__dot"></span>
       <span class="console__dot"></span>
-      <span class="console__title">@yehor_bot — приватний чат</span>
+      <span class="console__title">yehor.dev — інтерактивне портфоліо</span>
     </div>
     <div class="console__body" id="console-body">
       <!-- injected by main.js -->
@@ -266,7 +265,7 @@
           <li>Scroll-reveal через Intersection Observer, анімовані лічильники</li>
         </ul>
         <div class="proj__links">
-          <a class="proj__link" href="#contact">Демо за запитом ↗</a>
+          <a class="proj__link" href="#motion">Переглянути анімації ↗</a>
           <span class="proj__stack">HTML5 · CSS3 · JavaScript ES6+</span>
         </div>
       </div>
@@ -298,12 +297,50 @@
           <li>GitHub Actions workflow для статичного деплою</li>
         </ul>
         <div class="proj__links">
-          <a class="proj__link" href="#contact">Деталі ↗</a>
+          <a class="proj__link" href="#motion">Про анімації ↗</a>
           <span class="proj__stack">HTML · CSS · JS · GitHub Actions</span>
         </div>
       </div>
     </article>
 
+  </div>
+</section>
+
+<!-- ░░ MOTION ░░ -->
+<section class="motion" id="motion">
+  <div class="section-head reveal">
+    <p class="section-head__label">// motion lab</p>
+    <h2 class="section-head__title">Анімації, створені для інтерфейсу — не замість нього</h2>
+    <p class="section-head__sub">Усі ефекти цього сайту написані вручну на CSS і нативному JavaScript: без важких бібліотек, із підтримкою prefers-reduced-motion.</p>
+  </div>
+  <div class="motion__grid">
+    <article class="motion-card motion-card--reveal reveal">
+      <div class="motion-card__visual" aria-hidden="true">
+        <span class="motion-card__tile"></span>
+        <span class="motion-card__tile"></span>
+        <span class="motion-card__tile"></span>
+      </div>
+      <p class="motion-card__tech">Intersection Observer · CSS</p>
+      <h3>Поява під час скролу</h3>
+      <p>Секції м’яко з’являються при прокручуванні. Спостереження завершується після появи елемента.</p>
+    </article>
+    <article class="motion-card motion-card--orbit reveal">
+      <div class="motion-card__visual" aria-hidden="true">
+        <span class="motion-card__orbit"><i></i></span>
+        <span class="motion-card__core"></span>
+      </div>
+      <p class="motion-card__tech">CSS keyframes · transform</p>
+      <h3>Живий акцент</h3>
+      <p>Легкий орбітальний рух і пульсація побудовані на transform та opacity — без анімації важких властивостей.</p>
+    </article>
+    <article class="motion-card motion-card--hover reveal">
+      <div class="motion-card__visual" aria-hidden="true">
+        <span class="motion-card__hover-tile">hover me<span>↗</span></span>
+      </div>
+      <p class="motion-card__tech">CSS transitions · prefers-reduced-motion</p>
+      <h3>Інтерактивні картки</h3>
+      <p>Мікровзаємодії підказують, що елемент інтерактивний, і не заважають читанню чи навігації.</p>
+    </article>
   </div>
 </section>
 
@@ -399,31 +436,6 @@
   </div>
 </section>
 
-<!-- ░░ CONTACT ░░ -->
-<section class="contact" id="contact">
-  <div class="contact__glow" aria-hidden="true"></div>
-  <div class="contact__inner reveal">
-    <p class="section-head__label">// контакти</p>
-    <h2 class="contact__title">Є задача на бота чи сайт?</h2>
-    <p class="contact__sub">Опишіть коротко, що потрібно — підкажу оптимальне рішення, терміни та формат співпраці. Фриланс, супровід або довгострокова робота.</p>
-    <div class="contact__actions">
-      <a class="btn btn--solid btn--lg" href="https://t.me/hi_juliet" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L4.8 13.3l-4.8-1.5c-1-.3-1-.9.2-1.4L20.6 2.9c.9-.3 1.6.2 1.3 1.4Z"/></svg>
-        @hi_juliet
-      </a>
-      <a class="btn btn--ghost btn--lg" href="mailto:yehor.students@gmail.com">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4V6Zm0 0 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        yehor.students@gmail.com
-      </a>
-      <a class="btn btn--ghost btn--lg" href="https://github.com/yegor10" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
-        GitHub
-      </a>
-      <a class="btn btn--ghost btn--lg" href="cv.html" target="_blank" rel="noopener">Резюме (PDF)</a>
-    </div>
-    <p class="contact__note">Можна без ТЗ — просто опишіть задачу й скиньте приклади.</p>
-  </div>
-</section>
 </main>
 
 <footer class="foot">
@@ -432,6 +444,6 @@
   <a class="foot__up" href="#top">Нагору ↑</a>
 </footer>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

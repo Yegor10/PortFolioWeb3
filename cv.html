@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a0b0c" />
 <title>Резюме — Єгор · Python-розробник</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root{
     --ink:#1a0b0c; --accent:#d62b22; --ember:#ff6b4a;
     --text:#222; --muted:#6b6b6b; --line:#e7dcd8; --bg:#fff;
-    --display:"Space Grotesk",sans-serif; --body:"Inter",sans-serif; --mono:"JetBrains Mono",monospace;
+    --display:Arial,"Helvetica Neue",sans-serif; --body:system-ui,-apple-system,"Segoe UI",sans-serif; --mono:ui-monospace,"Cascadia Code","Segoe UI Mono",monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:var(--body);color:var(--text);background:#ece6e2;line-height:1.5;padding:2rem 1rem;}
@@ -25,8 +23,6 @@
   .head{background:var(--ink);color:#f5eee6;padding:2.4rem 2.6rem;border-top:5px solid var(--accent);}
   .head h1{font-family:var(--display);font-size:2.1rem;font-weight:700;letter-spacing:-.02em;}
   .head .role{font-family:var(--mono);color:var(--ember);margin-top:.3rem;font-size:.95rem;}
-  .head .contacts{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.1rem;font-size:.86rem;color:#cdbdb7;font-family:var(--mono);}
-  .head .contacts a{color:#cdbdb7;text-decoration:none;}
 
   .body{display:grid;grid-template-columns:1fr 1.6fr;}
   .col{padding:2rem 2.2rem;}
@@ -74,12 +70,6 @@
   <header class="head">
     <h1>Єгор</h1>
     <p class="role">Backend-розробник · Python &amp; інтеграція API · Веб-розробник</p>
-    <div class="contacts">
-      <span>Telegram: <a href="https://t.me/hi_juliet">@hi_juliet</a></span>
-      <span>GitHub: <a href="https://github.com/yegor10">github.com/yegor10</a></span>
-      <span>Email: <a href="mailto:yehor.students@gmail.com">yehor.students@gmail.com</a></span>
-      <span>Формат: фриланс / віддалено</span>
-    </div>
   </header>
 
   <div class="body">
