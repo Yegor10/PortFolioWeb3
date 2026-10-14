@@ -10,8 +10,8 @@ PortFolioWeb3/
 ├── index.html            # головна сторінка
 ├── cv.html               # резюме (print-ready → «Зберегти як PDF»)
 ├── assets/
-│   ├── css/styles.css    # дизайн-система, червона тема, адаптив
-│   └── js/main.js        # bot-консоль, scroll-reveal, лічильники, меню
+│   ├── css/styles.20261014.css # дизайн-система, анімації, адаптив
+│   └── js/main.20261014.js     # bot-консоль, scroll-reveal, лічильники, меню
 └── README.md
 ```
 

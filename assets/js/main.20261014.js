@@ -1,5 +1,5 @@
 /* ============================================================
-   yehor.dev — interactions
+   yehor.dev — portfolio interactions
    ============================================================ */
 (function () {
   "use strict";
